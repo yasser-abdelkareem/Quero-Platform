@@ -86,7 +86,9 @@ header{
 
 .dashboard-container{
   display:flex;
-  height:calc(100vh - 140px);
+  /* height:calc(100vh - 140px); */
+   flex:1;
+  min-height:0;
 }
 
 .sidebar{
