@@ -1,0 +1,190 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Cairo",sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  color:#fff;
+}
+
+/* ===== Header ===== */
+header{
+  background:#111;
+  padding:20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  font-size:22px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+#homeBtn{
+  position:absolute;
+  left:20px;
+  padding:8px 18px;
+  border:none;
+  border-radius:8px;
+  background:#00c6ff;
+  font-weight:700;
+  cursor:pointer;
+  display:none;
+}
+
+#homeBtn:hover{
+  opacity:0.9;
+}
+
+/* ===== Levels Page ===== */
+#levelsPage{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px 20px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:20px;
+  width:100%;
+  max-width:1000px;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+  padding:30px;
+  text-align:center;
+  border-radius:15px;
+  cursor:pointer;
+  transition:0.3s;
+  font-weight:600;
+  font-size:18px;
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  background:#00c6ff;
+  color:#000;
+}
+
+/* ===== Dashboard ===== */
+#dashboard{
+  display:none;
+  flex:1;
+}
+
+.dashboard-container{
+  display:flex;
+  height:calc(100vh - 140px);
+}
+
+.sidebar{
+  width:220px;
+  background:#111;
+  padding:20px;
+  overflow-y:auto;
+}
+
+.sidebar h3{
+  margin-bottom:15px;
+  text-align:center;
+}
+
+.sidebar ul{
+  list-style:none;
+}
+
+.sidebar li{
+  padding:10px;
+  margin-bottom:8px;
+  background:#222;
+  border-radius:8px;
+  cursor:pointer;
+  text-align:center;
+  transition:0.3s;
+}
+
+.sidebar li:hover{
+  background:#00c6ff;
+  color:#000;
+}
+
+.content{
+  flex:1;
+  padding:40px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+pre{word-break: break-all;}
+.content-box{
+  width:100%;
+ word-break: break-all;}
+
+#levelText{
+  width:100%;
+  height:75vh;
+  padding:15px;
+  border-radius:12px;
+  border:none;
+  font-size:16px;
+  overflow:auto;
+  background:rgba(255,255,255,0.05);
+  color:#fff;
+   white-space: pre-wrap;
+  overflow-wrap: anywhere;   /* الأقوى في كسر الكلمات */
+  word-break: break-word;
+}
+
+#levelText *{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+#levelText pre,
+#levelText code{
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+button{
+  margin-top:15px;
+  padding:10px 25px;
+  border:none;
+  border-radius:8px;
+  background:#00c6ff;
+  font-weight:700;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:0.9;
+}
+
+.copy-msg{
+  margin-top:10px;
+  color:#00ffcc;
+  display:none;
+}
+
+/* ===== Footer ===== */
+footer{
+  background:#111;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+footer a{
+    text-decoration: none;
+    color: #00c6ff;
+}
